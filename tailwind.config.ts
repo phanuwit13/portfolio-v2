@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         'bebas-neue': ['var(--bebas-neue)'],
+        'death-star': ['Death-Star', 'sans-serif'],
       },
     },
   },
