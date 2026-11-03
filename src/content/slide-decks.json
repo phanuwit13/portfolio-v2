@@ -1,8 +1,8 @@
 [
   {
     "slug": "tanstack-redact",
-    "title": "TanStack Redact — React runtime ที่เบากว่า",
-    "summary": "TanStack Redact สลับ runtime ของ React ตอน build ทำให้ bundle เล็กลง 20–70% โดยไม่ต้องแก้โค้ดแอป แต่ต้องแลกกับ synchronous rendering และความเข้ากันได้ที่ต้องทดสอบเอง",
+    "title": "TanStack Redact: a lighter React runtime",
+    "summary": "TanStack Redact swaps React's browser runtime at build time and cuts bundles by 20–70% with no app code changes — at the cost of synchronous rendering and compatibility you have to test yourself.",
     "date": "2026-11-03",
     "slideCount": 10,
     "source": {
@@ -18,8 +18,8 @@
   },
   {
     "slug": "tanstack-start-vs-nextjs",
-    "title": "TanStack Start vs Next.js (2026) — แอปเดียวกัน benchmark จริง",
-    "summary": "สร้างแอปเดียวกันด้วยทั้งสอง framework แล้ววัดจริงบน 2 cores: Start รับ request ฝั่ง server ได้มากกว่า 2.9–8.6 เท่า ส่ง JS น้อยกว่า 20% และ build เร็วกว่า 3.9 เท่า ส่วน Next.js ชนะที่หน้า static",
+    "title": "TanStack Start vs Next.js (2026): same app, real benchmarks",
+    "summary": "The same app built in both frameworks and measured on 2 cores: Start serves 2.9–8.6× more server-rendered requests, ships 20% less JS and builds 3.9× faster — Next.js only wins on prerendered static pages.",
     "date": "2026-11-03",
     "slideCount": 12,
     "source": {
