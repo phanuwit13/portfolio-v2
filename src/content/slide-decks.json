@@ -1,41 +1,36 @@
 [
   {
-    "slug": "a-complete-guide-to-useeffect",
-    "title": "A Complete Guide to useEffect",
-    "summary": "Every render has its own props, state and effects. Why the dependency array is about synchronization rather than lifecycle — and how to stop lying to React about it.",
-    "date": "2026-10-28",
-    "slideCount": 14,
+    "slug": "tanstack-redact",
+    "title": "TanStack Redact — React runtime ที่เบากว่า",
+    "summary": "TanStack Redact สลับ runtime ของ React ตอน build ทำให้ bundle เล็กลง 20–70% โดยไม่ต้องแก้โค้ดแอป แต่ต้องแลกกับ synchronous rendering และความเข้ากันได้ที่ต้องทดสอบเอง",
+    "date": "2026-11-03",
+    "slideCount": 10,
     "source": {
-      "title": "A Complete Guide to useEffect",
-      "author": "Dan Abramov",
-      "url": "https://overreacted.io/a-complete-guide-to-useeffect/"
+      "title": "TanStack Redact brings a lighter React runtime",
+      "author": "Atharva Deosthale",
+      "url": "https://appwrite.io/blog/post/tanstack-redact-lighter-react-runtime"
     },
-    "tags": ["React", "Hooks"]
+    "tags": [
+      "React",
+      "TanStack",
+      "Performance"
+    ]
   },
   {
-    "slug": "write-tests-mostly-integration",
-    "title": "Write tests. Not too many. Mostly integration.",
-    "summary": "The testing trophy: why integration tests buy the most confidence per minute spent, and where unit and end-to-end tests still earn their place.",
-    "date": "2026-10-12",
-    "slideCount": 9,
+    "slug": "tanstack-start-vs-nextjs",
+    "title": "TanStack Start vs Next.js (2026) — แอปเดียวกัน benchmark จริง",
+    "summary": "สร้างแอปเดียวกันด้วยทั้งสอง framework แล้ววัดจริงบน 2 cores: Start รับ request ฝั่ง server ได้มากกว่า 2.9–8.6 เท่า ส่ง JS น้อยกว่า 20% และ build เร็วกว่า 3.9 เท่า ส่วน Next.js ชนะที่หน้า static",
+    "date": "2026-11-03",
+    "slideCount": 12,
     "source": {
-      "title": "Write tests. Not too many. Mostly integration.",
-      "author": "Kent C. Dodds",
-      "url": "https://kentcdodds.com/blog/write-tests"
+      "title": "TanStack Start vs Next.js (2026): Same App Benchmarked",
+      "author": "Waseem Anjum",
+      "url": "https://www.fabwaseem.com/blog/tanstack-start-vs-nextjs"
     },
-    "tags": ["Testing"]
-  },
-  {
-    "slug": "interactive-guide-to-flexbox",
-    "title": "Flexbox, explained as rules",
-    "summary": "Primary vs cross axis, how flex-grow, flex-shrink and flex-basis negotiate space, and the minimum-size gotcha that makes items refuse to shrink.",
-    "date": "2026-09-21",
-    "slideCount": 11,
-    "source": {
-      "title": "An Interactive Guide to Flexbox",
-      "author": "Josh W. Comeau",
-      "url": "https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/"
-    },
-    "tags": ["CSS", "Layout"]
+    "tags": [
+      "TanStack Start",
+      "Next.js",
+      "Benchmark"
+    ]
   }
 ]
