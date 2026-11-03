@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Caveat, Space_Grotesk } from "next/font/google";
+import { Caveat, IBM_Plex_Sans_Thai, Space_Grotesk } from "next/font/google";
 import {
   SITE_DESCRIPTION,
   SITE_NAME,
@@ -18,6 +18,18 @@ const caveat = Caveat({
   variable: "--font-caveat",
   subsets: ["latin"],
   weight: ["500", "700"],
+});
+
+/**
+ * Thai glyphs only — Space Grotesk and Caveat have none. Same family the
+ * slide decks use. Not preloaded: its unicode-range means browsers fetch it
+ * only on pages that actually contain Thai text.
+ */
+const plexThai = IBM_Plex_Sans_Thai({
+  variable: "--font-plex-thai",
+  subsets: ["thai"],
+  weight: ["400", "500", "700"],
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -96,7 +108,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${caveat.variable}`}>
+    <html
+      lang="en"
+      className={`${spaceGrotesk.variable} ${caveat.variable} ${plexThai.variable}`}
+    >
       <body>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
         <a className="skip-link" href="#main">

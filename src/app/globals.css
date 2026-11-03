@@ -15,8 +15,10 @@
   --paper-shade: #f3f3f0;
   color-scheme: light;
 
-  --font-body: var(--font-space-grotesk), system-ui, sans-serif;
-  --font-hand: var(--font-caveat), cursive;
+  /* Plex Thai only covers Thai, so Latin text still uses the first font */
+  --font-body: var(--font-space-grotesk), var(--font-plex-thai), system-ui,
+    sans-serif;
+  --font-hand: var(--font-caveat), var(--font-plex-thai), cursive;
 
   /* classic hand-drawn wobbly border trick */
   --sketch-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
