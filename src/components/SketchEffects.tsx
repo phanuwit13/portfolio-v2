@@ -7,6 +7,7 @@ const REVEAL_SELECTOR = [
   ".about__grid",
   ".skill-group",
   ".project",
+  ".deck",
   ".job",
   ".edu__card",
   ".contact__title",
@@ -70,7 +71,7 @@ export function SketchEffects() {
     revealTargets.forEach((el) => revealObserver.observe(el));
 
     // Stagger sibling reveals slightly (skill cards, timeline jobs)
-    document.querySelectorAll(".skills, .timeline, .edu, .projects").forEach((group) => {
+    document.querySelectorAll(".skills, .timeline, .edu, .projects, .decks").forEach((group) => {
       group.querySelectorAll<HTMLElement>(".reveal").forEach((el, i) => {
         el.style.transitionDelay = `${Math.min(i * 90, 450)}ms`;
       });
