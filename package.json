@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deck:add": "node scripts/deck.mjs add",
+    "deck:remove": "node scripts/deck.mjs remove"
   },
   "dependencies": {
     "next": "16.4.4",

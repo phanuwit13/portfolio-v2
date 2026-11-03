@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "a-complete-guide-to-useeffect",
+    "title": "A Complete Guide to useEffect",
+    "summary": "Every render has its own props, state and effects. Why the dependency array is about synchronization rather than lifecycle — and how to stop lying to React about it.",
+    "date": "2026-10-28",
+    "slideCount": 14,
+    "source": {
+      "title": "A Complete Guide to useEffect",
+      "author": "Dan Abramov",
+      "url": "https://overreacted.io/a-complete-guide-to-useeffect/"
+    },
+    "tags": ["React", "Hooks"]
+  },
+  {
+    "slug": "write-tests-mostly-integration",
+    "title": "Write tests. Not too many. Mostly integration.",
+    "summary": "The testing trophy: why integration tests buy the most confidence per minute spent, and where unit and end-to-end tests still earn their place.",
+    "date": "2026-10-12",
+    "slideCount": 9,
+    "source": {
+      "title": "Write tests. Not too many. Mostly integration.",
+      "author": "Kent C. Dodds",
+      "url": "https://kentcdodds.com/blog/write-tests"
+    },
+    "tags": ["Testing"]
+  },
+  {
+    "slug": "interactive-guide-to-flexbox",
+    "title": "Flexbox, explained as rules",
+    "summary": "Primary vs cross axis, how flex-grow, flex-shrink and flex-basis negotiate space, and the minimum-size gotcha that makes items refuse to shrink.",
+    "date": "2026-09-21",
+    "slideCount": 11,
+    "source": {
+      "title": "An Interactive Guide to Flexbox",
+      "author": "Josh W. Comeau",
+      "url": "https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/"
+    },
+    "tags": ["CSS", "Layout"]
+  }
+]
