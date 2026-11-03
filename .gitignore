@@ -20,6 +20,10 @@
 # production
 /build
 
+# slide deck inbox — published copies live in R2 (see decks/README.md)
+/decks/*
+!/decks/README.md
+
 # misc
 .DS_Store
 *.pem
