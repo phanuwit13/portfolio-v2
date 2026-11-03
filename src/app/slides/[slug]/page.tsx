@@ -93,7 +93,6 @@ export default async function SlideDeckPage(props: PageProps<"/slides/[slug]">) 
               src={fileUrl}
               title={`Slides: ${deck.title}`}
               allow="fullscreen"
-              allowFullScreen
               // The deck is served from the R2 origin, not this site's, so it
               // stays isolated even with scripts + its own origin allowed
               // (slide frameworks need both for navigation and storage).

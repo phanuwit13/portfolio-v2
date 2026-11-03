@@ -74,8 +74,15 @@ function readHead(html) {
 function deckFromFile(file, existing) {
   const slug = basename(file, extname(file));
   if (!SLUG_RE.test(slug)) {
+    // slide tools name exports after the title — offer its ASCII part
+    const suggestion =
+      slug
+        .normalize("NFKD")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "") || "my-deck-title";
     throw new DeckError(
-      `${rel(file)}: rename the file to a URL-safe slug, e.g. "my-deck-title.html" (a–z, 0–9 and hyphens).`
+      `${rel(file)}: rename the file to a URL-safe slug (a–z, 0–9 and hyphens), e.g. "${suggestion}.html"`
     );
   }
 
