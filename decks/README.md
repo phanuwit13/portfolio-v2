@@ -12,23 +12,28 @@ committed.
 
 ## Name the file after its URL
 
-`decks/a-complete-guide-to-useeffect.html` → `/slides/a-complete-guide-to-useeffect`
+`decks/tanstack-redact.html` → `/slides/tanstack-redact`
 
-Lowercase `a–z`, `0–9` and hyphens only.
+Lowercase `a–z`, `0–9` and hyphens only. If the slide tool named the file
+after the deck title, `deck:add` suggests a slug.
 
-## Put the metadata in the deck's `<head>`
+## Put the metadata in the deck's `<head>` — in English
+
+The site is English, so write the title and description in English even
+when the deck itself is Thai or bilingual. Leave the slide tool's `<title>`
+as it is and set `deck:title` — it takes precedence.
 
 ```html
-<title>A Complete Guide to useEffect</title>
+<meta name="deck:title" content="TanStack Redact: a lighter React runtime"> <!-- default: <title> -->
 <meta name="description" content="One or two sentences for the list card and link previews.">
-<meta name="deck:source-author" content="Dan Abramov">
-<meta name="deck:source-url" content="https://overreacted.io/a-complete-guide-to-useeffect/">
+<meta name="deck:source-author" content="Atharva Deosthale">
+<meta name="deck:source-url" content="https://appwrite.io/blog/post/tanstack-redact-lighter-react-runtime">
 
 <!-- optional -->
-<meta name="deck:source-title" content="A Complete Guide to useEffect"> <!-- default: <title> -->
-<meta name="deck:date" content="2026-10-28">                           <!-- default: today -->
-<meta name="deck:tags" content="React, Hooks">
-<meta name="deck:slides" content="14">                                  <!-- default: number of <section> tags -->
+<meta name="deck:source-title" content="TanStack Redact brings a lighter React runtime"> <!-- default: deck:title -->
+<meta name="deck:date" content="2026-11-03">                    <!-- default: today -->
+<meta name="deck:tags" content="React, TanStack, Performance">
+<meta name="deck:slides" content="10">                          <!-- default: number of <section> tags -->
 ```
 
 ## Commands

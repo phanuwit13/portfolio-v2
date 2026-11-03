@@ -86,17 +86,22 @@ function deckFromFile(file, existing) {
     );
   }
 
-  const { title, meta, sectionCount } = readHead(readFileSync(file, "utf8"));
+  const { title: headTitle, meta, sectionCount } = readHead(readFileSync(file, "utf8"));
   const problems = [];
   const required = (value, hint) => {
     if (!value) problems.push(`missing ${hint}`);
     return value ?? "";
   };
 
+  // The site is English: deck:title wins over whatever <title> the slide
+  // tool wrote (bilingual decks often carry a Thai or mixed <title>).
+  const title = required(
+    meta.get("deck:title") || headTitle,
+    '<meta name="deck:title" content="…"> (or a <title>)'
+  );
   const summary = required(meta.get("description"), '<meta name="description" content="…">');
   const author = required(meta.get("deck:source-author"), '<meta name="deck:source-author" content="…">');
   const url = required(meta.get("deck:source-url"), '<meta name="deck:source-url" content="https://…">');
-  required(title, "<title>…</title>");
   if (url && !/^https?:\/\/\S+$/.test(url)) problems.push(`deck:source-url "${url}" must be an http(s) URL`);
 
   const date = meta.get("deck:date") ?? existing?.date ?? today();
