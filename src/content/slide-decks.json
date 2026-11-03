@@ -32,5 +32,22 @@
       "Next.js",
       "Benchmark"
     ]
+  },
+  {
+    "slug": "http-concepts-slides",
+    "title": "HTTP/1 vs HTTP/2 vs HTTP/3: 23 concepts every engineer should know",
+    "summary": "HTTP/1.1’s single in-order queue explains keep-alive, six connections per host and domain sharding. HTTP/2’s multiplexed binary frames remove that queue, but one lost TCP packet still stalls every stream — which is why HTTP/3 moved to QUIC over UDP.",
+    "date": "2026-11-03",
+    "slideCount": 22,
+    "source": {
+      "title": "11 HTTP Concepts Explained for Beginners",
+      "author": "Neo Kim",
+      "url": "https://newsletter.systemdesign.one/p/http-concepts-explained"
+    },
+    "tags": [
+      "HTTP",
+      "Networking",
+      "Web Performance"
+    ]
   }
 ]
